@@ -24,7 +24,7 @@ const server = http.createServer((req, res) => {
       try {
         const payload = JSON.parse(body);
         const data = JSON.stringify({
-          model: 'claude-sonnet-4-20250514',
+          model: 'claude-sonnet-4-5',
           max_tokens: 700,
           system: payload.system,
           messages: [{ role: 'user', content: 'Mark my answer.' }]
